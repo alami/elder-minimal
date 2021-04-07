@@ -2,4 +2,4 @@
   export let data, helpers, request, settings;
 </script>
 
-Simple route
+Company route

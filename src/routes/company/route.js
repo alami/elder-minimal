@@ -1,5 +1,5 @@
 module.exports = {
-  all: () => [{ slug: '/simple' }],
+  all: () => [{ slug: '/company' }],
   permalink: ({ request }) => request.slug,
   data: () => {
     return {};
