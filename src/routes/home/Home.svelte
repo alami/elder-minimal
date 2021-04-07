@@ -1,15 +1,10 @@
 <script>
   export let data, helpers, request, settings;
+  import CompanyFinder from '../../components/CompanyFinder.svelte'
 
 </script>
 
-<style>
-</style>
-
-<svelte:head>
-  <title>Elder.js Template: Home</title>
-</svelte:head>
-
+<CompanyFinder hydrate-client={{}}/>
 <ul>
   {#each data.companies as company }
     <li>{company.NAME}</li>
