@@ -1,8 +1,6 @@
 <script>
   export let data, helpers, request, settings;
-  import Clock from '../../components/Clock.svelte';
 
-  console.log(data.companies)
 </script>
 
 <style>
@@ -12,5 +10,9 @@
   <title>Elder.js Template: Home</title>
 </svelte:head>
 
-<Clock hydrate-client={{}} />
-<a href='/simple/'>Simple</a>
+
+<ul>
+  {#each data.companies as company }
+    <li>{company.NAME}</li>
+  {/each}
+</ul>
