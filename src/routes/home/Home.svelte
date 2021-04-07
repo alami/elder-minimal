@@ -7,6 +7,6 @@
 <CompanyFinder hydrate-client={{ companies: data.companies.map((company) => ({ NAME: company.NAME, FID: company.FID})) }} />
 <ul>
   {#each data.companies as company }
-    <li>{company.NAME}</li>
+    <li><a href={helpers.permalinks.company({slug: company.FID})}>{company.NAME}</a></li>
   {/each}
 </ul>
