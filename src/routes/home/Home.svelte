@@ -4,7 +4,7 @@
 
 </script>
 
-<CompanyFinder hydrate-client={{}}/>
+<CompanyFinder hydrate-client={{ companies: data.companies.map((company) => ({ NAME: company.NAME, FID: company.FID})) }} />
 <ul>
   {#each data.companies as company }
     <li>{company.NAME}</li>
